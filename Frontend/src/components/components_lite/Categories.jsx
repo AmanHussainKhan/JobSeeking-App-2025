@@ -48,14 +48,14 @@ const Categories = () => {
           Explore our extensive job market.
         </p>
       </div>
-      <Carousel className="w-full   max-w-xl  mx-auto my-10">
+      <Carousel className="w-full   max-w-4xl  mx-auto my-10">
         <CarouselContent>
           {Category.map((category, index) => {
             return (
-              <CarouselItem className="md:basis-1/2 lg-basis-1/3 ">
-                <Button onClick={() => searchjobHandler(category)}>
+              <CarouselItem className="md:basis-1/2 lg-basis-1/3">
+                <div className="bg-yellow-100  border cursor-pointer px-4 py-7 font-semibold text-xl text-center" onClick={() => searchjobHandler(category)}>
                   {category}
-                </Button>
+                </div>
               </CarouselItem>
             );
           })}

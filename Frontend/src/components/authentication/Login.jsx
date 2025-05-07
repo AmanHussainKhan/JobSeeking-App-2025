@@ -56,6 +56,7 @@ const Login = () => {
 
   return (
     <div>
+        
       <Navbar></Navbar>
       <div className="flex items-center justify-center max-w-7xl mx-auto">
         <form
@@ -141,6 +142,11 @@ const Login = () => {
           </div>
         </form>
       </div>
+      <p className="text-slate-400 pl-5">Recruiter email: recruiter123@gmail.com</p>
+      <p className="text-slate-400 pl-5">Recruiter password: recruiter</p>
+      <hr></hr>
+      <p className="text-slate-400 pl-5">Job seeker email: aman@gmail.com</p>
+      <p className="text-slate-400 pl-5">Job seeker password: aman</p>
     </div>
   );
 };

@@ -24,12 +24,15 @@ const Header = () => {
               {" "}
               <PiBuildingOfficeBold />
             </span>{" "}
-            No.1 Job Hunt Website
+            one click! and you are Hired.
           </span>
 
           <h2 className="text-5xl font-bold">
-            Search Apply & <br />
-            Get Your <span className="text-[#6A38C2]">Dream Job</span>
+            Get your {" "}
+            <span className="text-[#6A38C2]">Dream Job</span>{
+              " "
+            }
+            on a single click!
           </h2>
           <p>
             Start your hunt for the best, life-changing career opportunities
@@ -41,9 +44,9 @@ const Header = () => {
               type="text"
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Find Your Dream Job"
-              className="outline-none border-none w-full"
+              className="outline-none px-5 py-2 border-none w-full"
             />
-            <Button onClick={searchjobHandler} className=" rounded-r-full">
+            <Button onClick={searchjobHandler} className="py-1 rounded-r-full">
               <Search className="h-5 w-5" />
             </Button>
           </div>
